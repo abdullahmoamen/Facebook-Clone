@@ -1,0 +1,13 @@
+.widgets{
+    background-color:rgba(128, 128, 128, 0.178);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding:10px !important;
+}
+.widgets >h2{
+    text-align: center;
+    background-color: transparent;
+    color: #2e81f4;
+    padding:10px
+}

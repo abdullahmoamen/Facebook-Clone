@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    background-color: #f1f2f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__body{
+    display:flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 480px) {
+    .feed{
+        padding:10px 60px !important;
+        justify-content:center !important;
+        text-align:center !important;
+        max-width: 480px !important;
+    }
+
+    h3{
+        font-size:12px !important
+    }
+    .widgets {
+        display:none !important
+    }
+    .post ,.post__options ,.messageSender__option,.messageSender__top,
+    .messageSender__bottom,.messageSender__top > form
+    {
+        width: 50% !important;
+        box-shadow: none !important;
+        /* margin-right: 100px !important; */
+        
+    }
+    .messageSender{
+        width: 50% !important;
+        box-shadow: none !important;
+        font-size:12px !important;
+    }
+    .messageSender__top{
+        margin-right: 600px !important;
+        width: 80% !important;
+    }
+    .messageSender__top >input{
+        width: 50% !important;
+    }
+    .messageSender__bottom{
+        box-shadow: none !important;
+        font-size:12px !important;
+    }
+    .messageSender__option{
+        margin-left:0px !important;
+        margin-right:-30px !important;
+        padding:40px !important
+    }
+    .submit{
+        display: block !important;
+        background-color: #2e81f4;
+        color: #eff2f6;
+        font-weight:750;
+        border: none;
+        outline: none;
+        border-radius:10px;
+        padding:10px;
+        cursor:pointer;
+    }
+    .submit:hover{
+            background-color: #eff2f6;
+            color: #2e81f4;
+            font-weight: bold;
+            font-size:15px;
+            transition:.5s ease-out;
+        }
+    
+    .post__options{
+        text-align: center;
+        align-items: center;
+        padding-left: 140px !important;
+    }
+    .messageSender,.messageSender__top>form{
+        width: 50% !important;
+    }
+    .story{
+        width: 80px !important;
+        height: 160px !important;
+        margin-top: 100px;
+    }
+    .sidebar{
+        display: none !important;
+    }
+
+    .header{
+        position: fixed !important;
+    }
+    .header__right{
+        align-items: center;
+        padding-left: 0px !important;
+    }
+    .header__center{
+        display:none !important
+    }
+    /* .header__input{
+    display:none !important
+    } */
 }
